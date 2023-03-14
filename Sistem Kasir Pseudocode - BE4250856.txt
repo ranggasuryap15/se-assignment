@@ -1,0 +1,17 @@
+program sistem_kasir
+
+deklarasi
+var kode_barang, nama_barang : string
+var harga_barang : int
+var total_harga, total_bayar: int
+
+algoritma:
+INPUT kode_barang, nama_barang, harga_barang
+OUTPUT total_harga
+
+INPUT total_bayar 
+IF (total_bayar >= total_harga) THEN
+	OUTPUT "selesai transaksi"
+ELSE 
+	// total_bayar harus lebih dari sama dengan total_harga
+	INPUT total_bayar // require total_bayar >= total_harga
